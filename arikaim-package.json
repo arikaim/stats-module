@@ -2,9 +2,9 @@
     "title": "Stats",
     "name": "stats",
     "package-type": "module",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Stats middleware.",
     "type": "middleware",
     "disabled": false,
-    "repository":"https://github.com/arikaim/stats-module.git"
+    "repository": "https://github.com/arikaim/stats-module.git"
 }

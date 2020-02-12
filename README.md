@@ -13,10 +13,8 @@ Arikaim CMS Stats middleware module
 
 
 
-#### Install
+#### Installation
 
-```bash
-
+```sh
 composer require arikaim/stats-module
-
 ```
