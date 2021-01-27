@@ -7,8 +7,7 @@ Arikaim CMS Stats middleware module
 
 
 
-#### Requirements 
-  * PHP 7.1
+#### Requirements  
   * [Arikaim CMS](https://github.com/arikaim/arikaim)
 
 
