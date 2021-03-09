@@ -2,7 +2,7 @@
     "title": "Stats",
     "name": "stats",
     "package-type": "module",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Stats middleware.",
     "type": "middleware",
     "disabled": false,
