@@ -43,7 +43,7 @@ class StatsMiddleware extends Middleware implements MiddlewareInterface
             'http_user_agent' => $request->getheader('HTTP_USER_AGENT')
         ];
 
-        if (($this->options['dispatch_event'] ?? null) !== false) {
+        if (($this->options['dispatch_event'] ?? null) == true) {
             // dispatch event
             $this->container->get('event')->dispatch('stats.middleware',$statsData);
         }
