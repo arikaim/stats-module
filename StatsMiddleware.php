@@ -40,7 +40,7 @@ class StatsMiddleware extends Middleware implements MiddlewareInterface
             'fragment'        => $uri->getFragment(),                    
             'url'             => (string)$uri,
             'client_ip'       => ClientIp::getClientIpAddress($request),
-            'http_user_agent' => $request->getheader('HTTP_USER_AGENT')
+            'http_user_agent' => $request->getHeader('User-Agent')[0] ?? null
         ];
 
         if (($this->options['dispatch_event'] ?? null) == true) {
