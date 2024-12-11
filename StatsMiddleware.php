@@ -30,6 +30,8 @@ class StatsMiddleware extends Middleware implements MiddlewareInterface
      */
     public function process(ServerRequestInterface $request, ResponseInterface $response): array
     {     
+        global $arikaim;
+
         $uri = $request->getUri();
         
         $statsData = [
@@ -45,7 +47,7 @@ class StatsMiddleware extends Middleware implements MiddlewareInterface
 
         if (($this->options['dispatch_event'] ?? null) == true) {
             // dispatch event
-            $this->container->get('event')->dispatch('stats.middleware',$statsData);
+            $arikaim->get('event')->dispatch('stats.middleware',$statsData);
         }
                   
         $request = $request->withAttribute('stats_data',$statsData); 
